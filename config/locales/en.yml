@@ -310,6 +310,9 @@ en:
   i_contributed: "I contributed the project %{name} on @catarse"
   i_just_contributed: "I just contributed the project %{name} on @catarse"
   layouts:
+    announcement:
+      message: "Update your e-mail, now! Our login system is changing"
+      message_url: "Click here to know more"
     login:
       login_with_facebook: "sign in with your facebook account"
       remember_me: "Remember me and keep me connected."
@@ -650,7 +653,9 @@ en:
         state: "State"
         approve: "Approve"
         reject: "Reject"
-        send_to_draft: "Sendo to draft"
+        send_to_draft: "Send to draft"
+        send_to_trash: "Delete Project"
+        confirmation: "Are you sure you want to delete this project?"
     edit: "Update channel"
 
   registrations:
