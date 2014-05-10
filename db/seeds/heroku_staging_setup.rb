@@ -3,6 +3,7 @@
 puts 'Seeding the database...'
 
 [
+  Authorization,
   Contribution,
   Reward,
   Notification,
