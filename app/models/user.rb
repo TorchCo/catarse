@@ -149,16 +149,24 @@ class User < ActiveRecord::Base
   end
 
   def self.create_from_hash(hash)
-    create!(
-      {
-        name: hash['info']['name'],
-        email: hash['info']['email'],
-        nickname: hash["info"]["nickname"],
-        bio: (hash["info"]["description"][0..139] rescue nil),
-        locale: I18n.locale.to_s,
-        image_url: "https://graph.facebook.com/#{hash['uid']}/picture?type=large"
-      }
-    )
+    options = {
+      name: hash['info']['name'],
+      email: hash['info']['email'],
+      nickname: hash["info"]["nickname"],
+      bio: (hash["info"]["description"][0..139] rescue nil),
+      locale: I18n.locale.to_s
+    }
+
+    options[:image_url] = case hash['provider']
+    when 'facebook'
+      "https://graph.facebook.com/#{hash['uid']}/picture?type=large"
+    when 'google_oauth2'
+      hash['info']['image']
+    else
+      nil
+    end
+
+    create! options
   end
 
   def total_contributions
