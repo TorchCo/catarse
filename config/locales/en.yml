@@ -260,7 +260,7 @@ en:
     hints:
       contribution:
         credits: "You have <strong>%{credits}</strong> in credits and can contribution with up to this amount without needing to make a new payment."
-        value: "You chose the amount ;) starting with R$10, any amount is great."
+        value: "You choose the amount ;) starting with CAN$10, any amount is great."
       project:
         video_url_edit: 'Paste here the URL of your Vimeo/Youtube video.'
         about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
@@ -448,6 +448,10 @@ en:
     update:
       success: "Updated"
     form:
+      edit_alert:
+        content_html: "To learn all about how to structure your project, download the %{link}."
+        link: 'Full Guide'
+      guideLink: "To learn all about how to structure your project, download the full guide"
       permalink_hint: 'Simplify the URL of your project. Think that your sponsor need to remember the address to share your project.'
       add_reward: "Add reward"
       important_html: "Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
