@@ -32,5 +32,7 @@ Catarse::Application.configure do
   config.action_mailer.delivery_method = :letter_opener
 
   config.action_mailer.asset_host = "http://localhost:3000"
+
+  I18n.default_locale = :en
 end
 
