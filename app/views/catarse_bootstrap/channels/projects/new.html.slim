@@ -23,7 +23,7 @@ section.row
     = form.input :category_id, as: :select, collection: Category.array, label: t('submit_project.category_id')
     p = t('submit_project.category_id_hint', href: explore_url(subdomain: nil)).html_safe
 
-    = form.input :goal, as: :string, label: t('submit_project.goal')
+    = form.input :goal, as: :string, label: t('submit_project.goal', currency_unit: CatarseSettings[:currency_unit])
     p = t('submit_project.goal_hint').html_safe
 
     = form.input :online_days, as: :string, label: t('submit_project.online_days')

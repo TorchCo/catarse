@@ -67,7 +67,7 @@
                   .important= t('.important_html', link: link_to("MoIP", "http://www.moip.com.br/", target: :_blank))
               = form.label :goal
               = form.text_field :goal, class: "#{'error' if @project.errors[:goal].present?}"
-              p.inline-hints= t('formtastic.hints.project.goal').html_safe
+              p.inline-hints= t('formtastic.hints.project.goal', currency_unit: CatarseSettings[:currency_unit]).html_safe
 
             .input
               .bootstrap-alert

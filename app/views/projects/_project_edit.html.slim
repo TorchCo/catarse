@@ -22,7 +22,7 @@
       - if policy(@project).permitted_for?(:online_days, :update)
         = form.input :online_days, as: :number, required: false
       - if policy(@project).permitted_for?(:goal, :update)
-        = form.input :goal, as: :number, required: false, hint: t('formtastic.hints.project.goal').html_safe
+        = form.input :goal, as: :number, required: false, hint: t('formtastic.hints.project.goal', currency_unit: CatarseSettings[:currency_unit]).html_safe
       - if policy(@project).permitted_for?(:about, :update)
         = form.input :about, required: false
         = render 'formatting_tips'

@@ -19,7 +19,7 @@ en:
     category_id: "Category"
     category_id_hint: "Before you format your project <a href='%{href}' target='_blank'>explore other</a> (successful) projects to inspire yourself!"
 
-    goal: "Values in reais (R$)"
+    goal: "Values in %{currency_unit}"
     goal_hint: "The biggest part of the supportes will be close to you. Based on that try to think on your capacity to mobilize at least 50% of your network. Remember the Catarse 13% tax.Just divide your final budget by 0,87 to reach the final number."
 
     online_days: "How Many Campaign Days?"

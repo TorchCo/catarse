@@ -38,6 +38,7 @@ end
 puts "Done.\n"
 
 {
+  currency_unit: 'CAN$',
   company_name: 'EnergyFunding',
   company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
 
