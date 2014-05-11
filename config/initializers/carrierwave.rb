@@ -1,5 +1,7 @@
+FOG_ENV = %w(production staging)
+
 CarrierWave.configure do |config|
-  if Rails.env.staging? || Rails.env.production?
+  if FOG_ENV.include?(Rails.env.to_s)
     config.fog_credentials = {
       provider: 'AWS',
       host: 's3.amazonaws.com',

@@ -8,7 +8,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def self.choose_storage
-    Rails.env.production? ? :fog : :file
+    FOG_ENV.include?(Rails.env.to_s) ? :fog : :file
   end
 
   storage choose_storage
