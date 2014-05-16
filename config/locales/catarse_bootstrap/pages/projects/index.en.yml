@@ -1,0 +1,36 @@
+en:
+  projects:
+    index:
+      box:
+        by: by
+        when: in
+      banner: "Discover the research"
+      links:
+        channels: "Discover Asas Channel"
+        recommended: "Discover recommended projects"
+        expiring: "Discover expiring projects"
+        recents: "Discover recent projects"
+        near: "Discover projects near you"
+      sidebar:
+        titles:
+          blog: blog
+          facebook: "have you liked our facebook page yet?"
+          newsletter: "subscribe to our news"
+          faq: "have any doubt?"
+          schedule: calendar
+        placeholders:
+          email: "Enter your email"
+        buttons:
+          newsletter: Submit
+      sections:
+        near:
+          title: 'Near me'
+        recommended:
+          title: 'Recommended'
+        expiring:
+          title: "Expiring"
+        recents:
+          title: "Recents"
+        channels:
+          title: 'Asas Channel'
+
