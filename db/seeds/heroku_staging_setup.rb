@@ -46,11 +46,11 @@ puts "Done.\n"
   base_url: "http://torchco-cf-staging.herokuapp.com",
   base_domain: 'torchco-cf-staging.herokuapp.com',
 
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
+  email_contact: 'contact@enerverse.co',
+  email_payments: 'payments@enerverse.co',
+  email_projects: 'projects@enerverse.co',
+  email_system: 'info@enerverse.co',
+  email_no_reply: 'no-reply@enerverse.co',
 
   facebook_url: "http://facebook.com/catarse.me",
   facebook_app_id: ENV['FACEBOOK_KEY'],
