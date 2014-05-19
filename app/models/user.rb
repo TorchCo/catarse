@@ -160,7 +160,7 @@ class User < ActiveRecord::Base
     options[:image_url] = case hash['provider']
     when 'facebook'
       "https://graph.facebook.com/#{hash['uid']}/picture?type=large"
-    when 'google_oauth2'
+    when 'google_oauth2', 'linkedin'
       hash['info']['image']
     else
       nil
